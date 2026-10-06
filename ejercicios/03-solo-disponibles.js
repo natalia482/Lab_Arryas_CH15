@@ -30,7 +30,7 @@ function soloDisponibles(menu) {
   const resultado = [];
   for (let i = 0; i < menu.length; i++) {
     if (menu[i].disponible !== false) {
-      resultado.push(`${i}. ${menu[i].nombre} · ${menu[i].precio} · ${menu[i].categoria} ·  ${menu[i].disponible}`);
+      resultado.push(menu[i]);
     }
   }
   return resultado;

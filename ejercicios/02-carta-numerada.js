@@ -30,7 +30,7 @@ function cartaNumerada(menu) {
 
   for(let i = 0; i< menu.length ; i++){
     plato = menu[i];
-    menuRestaurante.push(`${i}. ${plato.nombre} · ${plato.precio}`);
+    menuRestaurante.push(`${i}. ${plato.nombre} · $${plato.precio}`);
   }
 
   return menuRestaurante

@@ -31,7 +31,7 @@ function platosPorCategoria(menu, categoria) {
   const resultado = [];
   for (let i = 0; i < menu.length; i++) {
     if (menu[i].categoria === categoria) {
-      resultado.push(`${menu[i].nombre}`);
+      resultado.push(menu[i]);
     }
   }
   return resultado;
@@ -39,8 +39,8 @@ function platosPorCategoria(menu, categoria) {
 
 console.log(platosPorCategoria(menu, "bebida"));
 console.log(platosPorCategoria(menu, "fuerte"));
-//console.log(platosPorCategoria(menu, "postre"));
-//console.log(platosPorCategoria(menu, "Bebida"));
+console.log(platosPorCategoria(menu, "postre"));
+console.log(platosPorCategoria(menu, "Bebida"));
 
 // No borres esta línea: es la puerta por donde el test usa tu función
 module.exports = { platosPorCategoria };
